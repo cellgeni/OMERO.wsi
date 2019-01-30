@@ -39,7 +39,7 @@ setup(name="wsi",
       packages=find_packages(exclude=['ez_setup']),
       version=VERSION,
       description="A Python plugin for OMERO.web",
-      long_description=read('README.rst'),
+      long_description=read('README.md'),
       classifiers=[
           'Development Status :: 5 - Production/Stable',
           'Environment :: Web Environment',
