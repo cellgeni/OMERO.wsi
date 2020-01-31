@@ -35,7 +35,7 @@ def read(fname):
 VERSION = '0.1.1'
 
 
-setup(name="wsi",
+setup(name="omero-wsi",
       packages=find_packages(exclude=['ez_setup']),
       version=VERSION,
       description="A Python plugin for OMERO.web",
