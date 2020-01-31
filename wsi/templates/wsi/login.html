@@ -47,7 +47,19 @@
 <div id="login-footer">
 	<p>
 		OMERO.web {{ version }}.<br/>
-		&copy; 2007-{{ build_year }} University of Dundee &amp; Open Microscopy Environment
+		&copy; 2007-{{ build_year }} University of Dundee &amp; Open Microscopy Environment<br/>
+		OMERO is distributed under the terms of the GNU GPL.
+		For more information, visit <a href="https://www.openmicroscopy.org">openmicroscopy.org</a><br/>
+
+        {% if show_download_links %}
+            Download OMERO.insight for
+            <a href="https://www.openmicroscopy.org/omero/downloads/" id="download-insight-mac">Mac OS X</a>,
+            <a href="https://www.openmicroscopy.org/omero/downloads/" id="download-insight-win">Windows</a>,
+            <a href="https://www.openmicroscopy.org/omero/downloads/" id="download-insight-linux">Linux</a><br>
+        {% endif %}
+
+        <img src="{% static 'webgateway/img/OME_logo_grey_110.png' %}"/>
     </p>
 </div>
+
 {% endblock %}
